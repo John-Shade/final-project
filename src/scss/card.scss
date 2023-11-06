@@ -1,0 +1,54 @@
+.card__list {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    height: 184px;
+    overflow-y: hidden;
+    max-width: 1008px;
+}
+
+.card__item {
+    height: 160px;
+    width: 224px;
+    background-color: $bgColorforEl;
+
+    list-style-type: none;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    flex-shrink: 0;
+
+    box-sizing: border-box;
+    
+    border: 1px solid rgba(234, 234, 234, 1);
+}
+
+
+
+
+.card-text {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+@media(max-width: 870px) and (min-width: 740px) {
+    .card__item:nth-child(3n)  {
+        margin-right: 0;
+    }
+}
+
+@media(min-width: 1328px) {   
+    .card__item:nth-child(4n)  {
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 760px) {
+    .card__list {
+        display: none;
+    }
+}

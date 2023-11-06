@@ -1,0 +1,142 @@
+.sidebar {
+    width: 320px;
+    min-width: 320px;
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
+
+    background-color: $bgColorforEl;
+ 
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    display: none;
+    z-index: 11;
+    position: absolute;
+}
+
+.sidebar--right {
+    right: 0;
+    height: 678px;
+    // bottom: 0;
+}
+
+.sidebar__menu-item {
+    font-size: 16px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    color: rgba(27, 28, 33, 1);
+    text-decoration: none;
+    margin-left: 24px;
+
+}
+
+.sidebar__menu-item:hover {
+    opacity: 0.6;
+}
+
+.sidebar__menu {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.sidebar__menu-link {
+    color: rgba(27, 28, 33, 1);
+    text-decoration: none;
+}
+
+.sidebar__menu-link--active {
+    color: rgba(126, 126, 130, 1);
+    border-left: 4px solid #41F6D7;
+    padding-left: 20px;
+    
+}
+
+.sidebar__menu-item--active {
+    margin-left: 0;
+}
+
+
+
+.sidebar__footer {
+    display: flex;
+    flex-direction: row;
+ 
+    flex-wrap: wrap;
+
+    list-style-type: none;
+
+    padding: 0;
+
+    padding-left: 24px;
+
+    /* margin-top: 100px; */
+    margin-top: auto;
+
+    width: 220px;
+    
+}
+
+.sidebar__footer-item {
+    padding-right: 16px;
+    padding-bottom: 16px;
+}
+
+.sidebar__footer-button {
+    background-color: transparent;
+    border: 0 solid;
+}
+
+
+.sidebar__footer-phone {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+
+
+.sidebar__footer-mail {
+    font-size: 16px;
+    font-weight: 550;
+}
+
+.sidebar__language-item {
+    color: rgba(27, 28, 33, 1);
+    font-size: 16px;
+    font-weight: 500;
+    padding-right: 7px;
+}
+
+@media(min-width: 1130px) {
+    .sidebar--permanent {
+        display: flex !important;
+        position: initial !important;
+        box-shadow: none;
+    }
+
+    .sidebar__footer {
+        margin-top: 232.060px;
+    }
+
+
+    .sidebar--right {
+        width: 440px;
+        height: 940px;
+    }
+
+    .title {
+        margin-top: 32px;
+    }
+}
+
+@media(max-width: 1129.5px) and (min-width: 564px) {  
+    .sidebar--permanent {
+        height: 1024px;
+    }
+}
+
+@media(max-width: 550px) and (min-width: 360px) {
+    .sidebar--permanent {
+        width: 360px;
+    }
+}

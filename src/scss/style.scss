@@ -1,0 +1,37 @@
+$text: #fff;
+$bgColor: #F8F8F8;
+$bgColorforEl: white;
+$bgColorforButton: rgba(255, 62, 121, 1);
+
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Regular.ttf') format('truetype');
+  // font-weight: normal;
+  // font-style: italic;
+}
+
+body {
+  font-family: "TT Lakes";
+  background-color: #F8F8F8;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+@media(max-width: 330px) {  
+  ::-webkit-scrollbar {
+      width: 0;
+  }
+}
+
+
+@import './header.scss';
+@import './menu.scss';
+@import './content.scss';
+@import './main.scss';
+@import './sidebar.scss';
+@import './swiper.scss';
+@import './brand.scss';
+@import './card.scss';
+@import './form.scss';
+@import './price.scss';

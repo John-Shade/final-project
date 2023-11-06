@@ -1,0 +1,79 @@
+.price-table {
+    border-collapse: collapse;
+}
+
+.price-table__body {
+    background-color: $bgColorforEl;
+}
+
+
+
+
+.price-table__row {
+    
+    border-bottom: 1px solid rgba(234, 234, 234, 1);
+    height: 65px;
+}
+
+
+.price-button {
+    width: 119px;
+    height: 39px;
+    background-color: $bgColorforButton;
+    border-radius: 20px;
+    border: 0px solid;
+    text-transform: uppercase;
+    color: white;
+    text-align: start;
+    padding-left: 15px;
+
+    font-size: 12px;
+    font-family: TT Lakes;
+    line-height: 24px;
+    font-weight: 550;
+}
+
+
+.container-with-button::after {
+    content: "";
+    width: 7px;
+    // height: 9.63px ;
+    height: 7px ;
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    left: -25px;
+    transform: rotate(45deg);
+    border-right: 4px solid white;
+    border-top: 4px solid  white;
+
+}
+
+.container-with-button {
+
+    display: block;
+    min-width: 135px;;
+}
+
+.container-with-button--price-table {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container-with-button--price-card {
+    position: fixed;
+    bottom: 16px;
+    right: 0;
+}
+
+
+.price-table__cell--first-cell {
+    padding-left: 24px;
+}
+
+@media(max-width: 760px) {
+
+    .price-table {
+        display: none;
+    }
+}

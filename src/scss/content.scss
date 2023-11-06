@@ -1,0 +1,137 @@
+.content-section__p-text {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.content {
+    padding-top: 32px;
+    margin-right: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content-section {
+    display: flex;
+    flex-flow: column;
+    margin-left: 24px;
+    margin-top: 48px;
+    margin-right: 0;
+}
+
+.content-section__button {
+    margin-left: 10px;
+    border: 0px solid #B8FFEC;
+    font-size: 16px;
+    font-family: "TT Lakes";
+    padding: 0;
+    font-weight: 500;
+    min-width: 132px;
+    height: 24px;
+    border: 0px;
+    color: #1B1C21;
+    text-align: left;
+    
+    order: 2;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+
+.content-section__text-button {  
+    margin-top: 2px;
+}
+
+
+.content-section__img-button {
+    padding: 0;
+    margin: 0;
+}
+
+
+.content-section__text {
+    max-height: 90px;
+    overflow: hidden;
+}
+
+#text.content-section__button:focus ~ .content-section__text {
+    overflow: visible;
+    max-height:fit-content;
+}
+
+.content__logo { 
+    margin: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 3%;
+
+    height: 176px;
+    width: 320px;
+}
+
+.content-section__title {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: rgba(126, 126, 130, 1);
+    line-height: 24px;
+    font-weight: 400;
+
+    /* padding-left: 24px; */
+}
+
+.content-section__table-text {
+    margin-top: 32px;
+}
+
+.content-section__img-button--red-line {
+    margin-top: 4.35px;
+    padding-left: 15.4px;
+}
+
+
+
+@media(min-width: 564px) {
+    .content-section__text {
+        max-height: 160px;
+    }
+    .content__logo {
+         width: auto;
+    }
+    .content {
+        flex-direction: row;
+    }
+    .content-section__section {
+        margin-right: 24px;
+    }
+}
+
+@media(min-width: 1130px) {  
+    .content__logo {
+        height: 307px;
+    }
+}
+
+@media(max-width: 1129.5px) and (min-width: 564px) {
+    .content__logo {
+        height: 208px;
+    }
+    .content-section { 
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 760px) {
+    #brand.content-section__button {
+        display: none;
+    }
+}

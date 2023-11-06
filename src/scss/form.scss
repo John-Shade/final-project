@@ -1,0 +1,65 @@
+.form__input {
+    width: 288px;
+    height: 46px;
+    border: 1px solid rgba(234, 234, 234, 1);
+    margin-bottom: 16px;
+    border-radius:  10px;
+    padding: 16px;
+    box-sizing: border-box;
+   
+    
+}
+
+.form__input::placeholder  {
+    color: rgba(181, 182, 188, 1);
+    font-family: TT Lakes;
+}
+
+.form__text {
+    color:rgba(126, 126, 130, 1);
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 19px;
+}
+
+.form__link-text {
+    color: rgba(255, 62, 121, 1);
+    text-decoration: none;
+}
+
+
+.form {
+    margin: 0 16px;
+}
+
+.form__input--submit {
+    width: 136px;
+    height: 32px;
+    border-radius: 20px;
+    border: 0px solid;
+    background-color: $bgColorforButton;
+    color: white;
+    font-weight: 550;
+    line-height: 24px;
+    // font-size: 12px;
+    font-family: TT Lakes;
+    display: block;
+    margin-left: auto;
+    box-sizing: border-box;
+    // margin-right: auto;
+}
+
+.form__input--message {
+    height: 118px;
+    padding-bottom: 102px;
+    box-sizing: border-box;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio]:checked ~ label {
+    color: rgba(126, 126, 130, 1);
+    
+}
